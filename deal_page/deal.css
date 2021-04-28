@@ -1,0 +1,449 @@
+.dealContainer {
+  background-color: #232323 !important;
+  max-width: 100% !important;
+}
+#dealContainerMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  #dealContainerDesktop {
+    display: none;
+  }
+  #dealContainerMobile {
+    display: block;
+    padding: 0px;
+  }
+}
+#carousel-background-top {
+  width: 100%;
+  height: 32vw;
+  min-height: 40vh;
+  position: relative;
+  border: 3px solid #d9ab73;
+}
+.topCouponContainer {
+  height: 16vw;
+  min-height: 20vh;
+  margin-top: 20px;
+}
+.topCouponContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#upperTopCouponContainer {
+  padding-bottom: 12px;
+}
+#lowerTopCouponContainer {
+  padding-top: 12px;
+}
+
+#svgCore {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  stroke-width: 0.5;
+}
+#svgCarousel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  stroke-width: 0.5;
+}
+.svgHolder {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#mainCarouselRow {
+  height: 100%;
+}
+
+#mainTopCarousel {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carouselImage {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-height: 40vh;
+  object-fit: contain;
+  margin-top: 10vh !important;
+}
+
+#topCarousel.carousel.slide.carousel-fade {
+  width: 100%;
+}
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+#yumaLogo {
+  margin: auto;
+  display: block;
+  position: relative;
+}
+#yumaLogo img {
+  width: 80%;
+  float: right;
+}
+#yumaLogo button {
+  position: absolute;
+  top: 130%;
+  left: 80%;
+  background: #d9ab73;
+  border-radius: 6px;
+  color: rgb(0, 0, 0.9);
+  font-family: "Montserrat", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bolder;
+  padding: 1vh 2vw 1vh 2vw !important;
+}
+
+.carouselLogo {
+  margin: auto;
+  display: block;
+  width: 150px;
+  margin-left: none !important;
+}
+
+.logoColumn {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: none;
+}
+
+.row.spacer {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#firstRow {
+  padding-top: 20px;
+  margin-top: none;
+}
+
+.contentHolder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.bannerCoupon {
+  height: 300px;
+  width: 100%;
+}
+.smallCoupon {
+  margin: auto;
+  display: block;
+  height: 15vw;
+}
+.smallCouponText {
+  color: #f2e6d5;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.largeCoupon {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.largeCoupon img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-height: 33vw;
+  border: px solid #d9ab73;
+}
+
+.middleRow {
+  height: 33vw;
+  min-height: 45vh;
+}
+
+#smallCarousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carouselSmallImage {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-height: 24vw;
+  object-fit: contain;
+}
+.carousel-inner img {
+  margin: auto;
+}
+
+#smallCarousel {
+  margin: auto;
+  display: block;
+}
+
+.carouselSmallText {
+  color: #f2e6d5;
+  text-align: center;
+}
+
+.bannerCoupon img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+#carousel-background-bottom {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.bannerCoupon img {
+  object-fit: contain;
+}
+
+.shopButton {
+  /* position: absolute;
+  top: 130%; */
+  left: 80%;
+  background: #d9ab73;
+  border-radius: 6px;
+  color: rgb(0, 0, 0.9);
+  font-family: "Montserrat", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bolder;
+  padding: 1vh 2vw 1vh 2vw !important;
+  margin-left: 20px;
+}
+#bottomYumaBrandCol img {
+  width: 40%;
+  margin-left: 15px;
+  max-height: 200px;
+}
+
+#bottomYumaLogoCol {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#bottomYumaLogoCol img {
+  width: 40%;
+  position: relative;
+  float: right;
+}
+
+#bottomYumaBrandCol #gkua {
+  width: 15%;
+}
+
+#bottomCarouselTopRow {
+  margin-top: 15px;
+}
+
+#bottomContentRow {
+  height: 40vw;
+  max-height: 50vh;
+}
+
+#carousel-background-top-mobile {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+#svgCarouselMobile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  stroke-width: 0.2;
+  z-index: 100;
+}
+
+.shopButtonMobile {
+  background: #d9ab73;
+  border-radius: 6px;
+  color: rgb(0, 0, 0.9);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  padding: 1vh 2vw 1vh 2vw !important;
+  display: flex;
+  justify-content: center;
+  margin-right: 30vw;
+  margin-left: 30vw;
+  text-decoration: none;
+}
+.carouselImageMobile {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 40vh;
+  max-height: 40vh;
+  object-fit: contain;
+  object-position: 50% 20%;
+  margin-top: 3vh !important;
+}
+.carouselLogoMobile {
+  display: block;
+  width: 150px;
+  object-fit: contain;
+}
+
+.mobileLogoWrapper {
+  height: 150px;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  display: flex;
+}
+.topCouponContainerMobile {
+  height: 30vh;
+}
+.topCouponContainerMobile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#smallCarouselMobile {
+  width: 100%;
+  height: 50vh;
+}
+
+.carouselSmallImageMobile {
+  display: block;
+  width: 100%;
+  height: 30vh;
+  object-fit: contain;
+  margin-top: 5vh !important;
+}
+
+.largeCouponMobile {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.largeCouponMobile img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+  min-height: 20vh;
+}
+
+.smallCouponMobile {
+  margin: auto;
+  display: block;
+  height: 20vh;
+  object-fit: contain;
+}
+.smallCouponTextMobile {
+  color: #f2e6d5;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#smallCouponFirstRow {
+  margin-top: 6vh;
+}
+
+.bannerCouponMobile {
+  width: 100%;
+  height: 40vh;
+}
+.bannerCouponMobile img {
+  width: 100%;
+  height: 100%;
+}
+
+#bottomMobileHolder {
+  width: 100%;
+  position: relative;
+  height: 140vh;
+}
+
+#bottomCarouselFirstRow {
+  height: 90vh;
+}
+#bottomCarouselFirstRow img {
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+#bottomCarouselSecondRow {
+  height: 30vh;
+  margin-top: 4vh;
+}
+#bottomCarouselSecondRow img {
+  width: 70%;
+  margin: auto;
+}
+#bottomCarouselThirdRow {
+  height: 10vh;
+}
+#bottomCarouselThirdRow a {
+  background: #232323;
+  border-radius: 6px;
+  color: #f2e6d5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  padding: 1vh 2vw 1vh 2vw !important;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 4vh;
+}
+#bottomCarouselThirdRow a:hover {
+  background: #f2e6d5;
+  color: #232323;
+}

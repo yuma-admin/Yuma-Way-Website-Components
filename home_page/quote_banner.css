@@ -1,0 +1,244 @@
+.QuoteBanner {
+  background-image: url("https://picsum.photos/seed/picsum/900/600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 48.65vw;
+  max-height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.QuoteBanner .mobile-only {
+  display: none;
+}
+
+.QuoteBanner .article_text {
+  position: absolute;
+  right: 0%;
+  top: 25%;
+}
+@media screen and (max-width: 667px) {
+  .QuoteBanner {
+    justify-content: flex-start;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .QuoteBanner {
+    min-height: 90vw;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  section.QuoteBanner div.non-mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  section.QuoteBanner div.mobile-only {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .QuoteBanner.left {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-bottom: 10vw;
+  }
+}
+
+.QuoteBanner article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 27%;
+  margin-left: 6vw;
+  margin-right: 3vw;
+}
+
+@media screen and (max-width: 480px) {
+  .QuoteBanner article {
+    max-width: 95%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.QuoteBanner article h2 {
+  font-family: "BrandonGrotesque-Black", Arial, sans-serif;
+  font-size: 2.4vw;
+  font-weight: 900;
+  text-align: center;
+  line-height: 3.95vw;
+  margin: 0 0 2px;
+  max-width: 525px;
+  color: #404132;
+}
+
+@media screen and (max-width: 480px) {
+  .QuoteBanner article h2 {
+    font-size: 9.5vw;
+    line-height: 14.5vw;
+  }
+}
+
+.QuoteBanner article p {
+  font-family: "BrandonText-Regular", Arial, sans-serif;
+  font-size: 1.25vw;
+  line-height: 1.75vw;
+  margin: 0 0 3vw;
+  max-width: 525px;
+  text-align: center;
+  color: #404132;
+}
+
+@media screen and (max-width: 480px) {
+  .QuoteBanner article p {
+    text-align: center;
+    max-width: 75vw;
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+}
+
+.QuoteBanner article a {
+  background-color: #404132;
+  border-radius: 3px;
+  line-height: 3.2vw;
+  color: #f2e6d5;
+  font-family: "BrandonGrotesque-Black", Arial, sans-serif;
+  font-size: 1.14vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 14vw;
+  max-height: 3.45vw;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .QuoteBanner article a {
+    min-width: 20vw;
+    max-width: 100vw;
+    max-height: none;
+    line-height: 11vw;
+    font-size: 3vw;
+    padding: 0 20px;
+  }
+}
+
+.QuoteBanner .img-container {
+  width: 75%;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 667px) {
+  .QuoteBanner .img-container {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 62vw;
+    max-height: 280px;
+  }
+}
+
+section.QuoteBanner.left svg.rotated {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  stroke-width: 0.1px;
+}
+@media screen and (max-width: 667px) {
+  .QuoteBanner.left .img-container svg {
+    top: initial;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+  }
+}
+.QuoteBanner .img-container svg {
+  position: absolute;
+  height: 100%;
+  width: 135px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 667px) {
+  .QuoteBanner.left .img-container img {
+    top: -30vw;
+    right: -13vw;
+    width: 120%;
+    height: auto;
+    min-height: auto;
+    max-height: fit-content;
+    min-width: 300px;
+  }
+}
+
+.QuoteBanner.left .img-container img {
+  right: -12vw;
+  bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+  .QuoteBanner.left .img-container img {
+    min-width: 500px;
+    right: -18vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .QuoteBanner.left .img-container img {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .QuoteBanner.left .img-container img {
+    top: -30vw;
+    right: -13vw;
+    width: 120%;
+    height: auto;
+    min-height: auto;
+    max-height: fit-content;
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .QuoteBanner.left .img-container img {
+    top: -17vw;
+  }
+}
+
+.QuoteBanner .img-container img {
+  position: absolute;
+  z-index: 1;
+  height: 50vw;
+}
+@media screen and (max-width: 667px) {
+  .QuoteBanner .img-container img {
+    width: 100%;
+    height: auto;
+  }
+}

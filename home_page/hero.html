@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hero.css">
+</head>
+<body>
+    <section class='hero'>
+        <svg id='mobileHeroView' class="rotated" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polyline stroke="#d9ab73" fill="none" points="3,1 3,99 97,99, 97,1 3,1 "></polyline>
+            <polyline stroke="#d9ab73" fill="none" points="1,2 1,98 99,98, 99,2 1,2"></polyline>
+          </svg>
+          <svg id='desktopHeroView' class="rotated" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polyline stroke="#d9ab73" fill="none" points="2,1 2,99 98,99, 98,1 2,1 "></polyline>
+            <polyline stroke="#d9ab73" fill="none" points="1,3 1,97 99,97, 99,3 1,3"></polyline>
+          </svg>
+        <div class='heroCol' id='mobileHeroView'>
+            <div class='logo'>
+                <image src='https://yuma-way.local/wp-content/uploads/2021/03/Yuma_Thin_Logo.png'></image>
+                <a href='"/1136-yuma-menu"'>Shop Now</a>
+            </div>         
+            <image class='mobileDisplayImage' src='https://yuma-way.local/wp-content/uploads/2021/03/Yuma-Render-Current-View.png'></image>
+        </div>
+        <div class='heroCol' id='desktopHeroView'>
+            <div class ='col' id='logoCol'>
+                <div class='logo'>
+                    <image src='https://yuma-way.local/wp-content/uploads/2021/03/Yuma_Thin_Logo.png'></image>
+                    <a href='"/1136-yuma-menu"'>Shop Now</a>
+                </div>         
+            </div>
+            <div class ='col' id='imageCol'>
+                <image class='displayImage' src='https://yuma-way.local/wp-content/uploads/2021/03/Yuma-Render-Current-View.png'></image>
+            </div>  
+        </div>
+          
+    </section>
+</body>
+</html>

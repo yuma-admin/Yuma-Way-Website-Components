@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+  <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <div class="containerFaq">
+
+        <svg class="rotated" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#f2e6d5" opacity="100%" points="100,100 100,0 0,0, 0,100"></polygon>
+            <polygon fill="#000000" opacity="90%" points="100,100 100,0 0,0, 0,100"></polygon>
+            <polyline stroke="#d9ab73" fill="none" points="2,1 2,99 98,99, 98,1 2,1 "></polyline>
+            <polyline stroke="#d9ab73" fill="none" points="1,3 1,97 99,97, 99,3 1,3"></polyline>
+          </svg>
+        <h2 class='title'>FAQs</h2>
+        <div class='faq'>
+            <button id="cannabis-button" aria-expanded="false"><span class="category-title">Cannabis</span></button>
+            <button id="dispensary-button" aria-expanded="false"><span class="category-title">Colorado Laws</span></button>
+            <button id="consumption-button" aria-expanded="false"><span class="category-title">Consumption</span></button>
+            <button id="orders-button" aria-expanded="false"><span class="category-title">Shopping & Ordering</span></button>
+        </div>
+        <div class='faqDropDown'>
+            <button onclick='openDropDown()' class='dropBtn'>Consumption</button>
+            <div id ='faqMobileDropDown' class='faqDropDownContent'>
+              <button id="cannabis-button" aria-expanded="false"><span class="">Cannabis</span></button>
+              <button id="dispensary-button" aria-expanded="false"><span class="">Colorado Laws</span></button>
+              <button id="consumption-button" aria-expanded="false"><span class="">Consumption</span></button>
+              <button id="orders-button" aria-expanded="false"><span class="">Shopping & Ordering</span></button>
+            </div>
+        </div>
+        <div class="accordion" id='cannabis'>
+          <div class='cannabisGrid grid'>
+            <div class='cannabis-grid-col cannabis-grid-col--1 grid-col'></div>
+            <div class='cannabis-grid-col cannabis-grid-col--2 grid-col grid-col--2 '></div>
+            <div class="accordion-item cannabis-accordion-item">
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is THC?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Tetrahydrocannabinol, otherwise known as THC, is the cannabinoid in cannabis plants and cannabis infused products largely responsible for the psychoactive effect associated with using cannabis. The effects of THC range from euphoria to increased sensory awareness.</p>
+              </div>
+            </div>
+            <div class="accordion-item cannabis-accordion-item">
+              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What is the difference between Recreational cannabis vs. Medical cannabis?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Although there is no inherent difference between the cannabis plants produced for medical patients and recreational customers, the manner in which products are manufactured does differ. This primarily includes the high amount of THC that is contained within a cannabis infused product for Medical Patients and the purchasing limits set for Medical Patients in one transaction.
+                  </p>
+              </div>
+            </div>
+            <div class="accordion-item cannabis-accordion-item">
+              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What is the difference between Indica vs Sativa vs Hybrid?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Indica is one of the three cannabis species; Indica, sativa, Ruderalis. Indica effects have been reported to be more body-focused, physically relaxing effects.
+
+                  Sativa cannabis strains are reported to have uplifting, cerebral highs that can be described as energizing and creativity inducing. 
+                  
+                  Hybrid cannabis strains are composed of a combination of two or more different strains of cannabis. Cannabis growers have been increasing potency of THC in strains by creating mixtures of sativa-dominant and indica-dominant strains. 
+                   </p>
+              </div>
+            </div>
+      
+          </div>
+          </div>
+        <div class="accordion shownContent" id='dispensary'>
+          <div class=' dispensaryGrid grid showGrid'>
+            <div class='dispensary-grid-col dispensary-grid-col--1 grid-col'></div>
+            <div class='dispensary-grid-col dispensary-grid-col--1 grid-col grid-col--2 '></div>
+            <div class="accordion-item dispensary-accordion-item">
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Can I take cannabis outside of Colorado?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>NO. It is illegal to transport cannabis products purchased in Colorado across state lines. Transporting cannabis products across state lines can result in drug trafficking charges. </p>
+              </div>
+            </div>
+            <div class="accordion-item dispensary-accordion-item">
+              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Can I smoke cannabis in public in Colorado?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Cannabis consumption can legally take place on private property. For the purposes of interpreting the Colorado Code of Regulations, vehicles do not constitute as private property. 
+
+                  If you are visiting from out-of-town and the place you are staying at does not allow consumption, your best option is to visit a licensed cannabis consumption lounge or licensed retail cannabis hospitality business.
+                  </p>
+              </div>
+            </div>
+            <div class="accordion-item dispensary-accordion-item">
+              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Can I drive while high on cannabis?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>NO. It is illegal to drive after consuming cannabis. Driving while high can result in a DUI citation. </p>
+              </div>
+            </div>
+            <div class="accordion-item dispensary-accordion-item">
+              <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Can I have cannabis in my car?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <p>Yes, you can have cannabis in your car, but it will need to be stored in a place that is not readily accessible to the driver or passengers.
+                  Driving under the influence of cannabis is illegal and dangerous. 
+                  </p>
+              </div>
+            </div>
+          </div>
+          </div>
+        <div class="accordion" id='consumption'>
+            <div class='consumptionGrid grid'>
+              <div class='consumption-grid-col consumption-grid-col--1 grid-col'></div>
+              <div class='consumption-grid-col consumption-grid-col--2 grid-col grid-col--2 '></div>
+              <div class="accordion-item consumption-accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What are THC edibles?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>The product offerings for this category of cannabis consumption continues to expand and now includes; THC ice cream, THC cold brew coffee, THC non-alcoholic beer and much more! 
+                    Typically edibles continue to be made with cannabis oil or cannabis infused butter.
+                     
+                    To ensure our customers have clean doses, THC edibles at Yuma Way dispensaries have been taste tested by our staff and by third-party laboratories to meet state compliance requirements. Information on each product can be found on vendors site, for any questions feel free to reach out to: thecoffeejoint@yumaway.com   </p>
+                </div>
+              </div>
+              <div class="accordion-item consumption-accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What are THC topicals?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Topicals are infused with cannabis by using cannabis oil. Since topical application of cannabis does not breach the bloodstream or get consumers “high”, topicals are often used to treat the body’s endocannabinoid system. 
+
+                    Topicals carried at Yuma Way dispensaries are available in THC or a variety of CBD:THC ratios. 
+                    </p>
+                </div>
+              </div>
+              <div class="accordion-item consumption-accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What do I do if I have a negative experience after smoking or consuming cannabis?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Step 1. Remain calm
+                    Step 2. Drink plenty of water. You also have the option of chewing on black peppercorn to reduce some of the If you find that you smoked or ate too much cannabis the best thing to do is to remain calm. 
+                    Next, drink plenty of water to flush your system out. You can also chew on black peppercorn, which reduces the effects of THC. 
+                    Change your scenery by taking a walk and getting some fresh air or relax in a warm bath to calm yourself. 
+                    Have some CBD oil available as it is the counteractive component of the psychoactive effects of cannabis. 
+                    </p>
+                </div>
+              </div>
+              <div class="accordion-item consumption-accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much should I consume edibles?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Everyone’s body has a different tolerance level to the compounds in cannabis, so it is important to consume a small amount of THC edibles, observe the effect, and then alter the dosage if necessary. The state of Colorado has defined a standard edible dose for recreational consumers to be 10mg of active THC. Remember you can always break up an edible into smaller pieces to find your desired dose.</p>
+                </div>
+              </div>
+              <div class="accordion-item consumption-accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What is the difference between smoking THC cannabis vs consuming THC cannabis edibles?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>On average, a high from cannabis achieved through smoking or vaporizing lasts from one to two hours. A high stemming from the consumption of edibles tends to last four to eight hours.
+                    The quality of a product, the dosage being administered or consumed, and the potency of the product are factors to consider when comparing the intensity and longevity of smoking vs consuming cannabis. A factor that may take time to pinpoint is how your body metabolizes cannabis compounds. 
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="accordion" id='orders'>
+            <div class='ordersGrid grid'>
+              <div class='orders-grid-col orders-grid-col--1 grid-col'></div>
+              <div class='orders-grid-col orders-grid-col--2 grid-col grid-col--2 '></div>
+              <div class="accordion-item orders-accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What kind of ID do I need to buy cannabis?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Please provide our dispensary receptionist with a valid, government issued, unexpired picture ID with birth date listed. Digital IDs are accepted as long as they are presented via a state-registered application. Screenshots of identification cards are not accepted. 
+ 
+                    Medical Patients, please provide your Colorado state medical card. Out-of-state medical cards are not accepted.
+                     
+                    For cannabis consumers visiting from outside of the USA, please provide a government issued, unexpired passport.
+                    </p>
+                </div>
+              </div>
+              <div class="accordion-item orders-accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">How much cannabis can I buy? </span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>In the state of Colorado, adults 21 years or older are allowed to purchase up to 1 ounce, or 28 grams, of THC products in a single transaction. </p>
+                </div>
+              </div>
+              <div class="accordion-item orders-accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How much cannabis can medical patients buy?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Medical Cannabis Patients can purchase up to 2 ounces of cannabis flower, 40 grams of THC concentrates, or 20,000mg of cannabis infused products; THC edibles, THC drinks, THC topicals including transdermal skin and body products. 
+
+                    Both recreational consumers and Medical cannabis patients have the option to buy a mix of products including; flower, edibles and concentrates.
+                    
+                    Please note that purchasing regulations only apply to sales; per the Colorado Constitution, consumers of cannabis are allowed to legally possess 1oz (or 28g) of THC at any given time.
+                    </p>
+                </div>
+              </div>
+              <div class="accordion-item orders-accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Do you accept debit cards?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Yes, we accept card payment on all sales above $100 pre-tax. There is also a $5 card processing fee. </p>
+                </div>
+              </div>
+              <div class="accordion-item orders-accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can I have cannabis shipped from Colorado to another state?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>NO.  It is illegal to transport cannabis outside of Colorado.</p>
+                </div>
+              </div>
+              <div class="accordion-item orders-accordion-item">
+                <button id="accordion-button-6" aria-expanded="false"><span class="accordion-title">Can I return or exchange cannabis products?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Yuma Way dispensaries can only accept returns for products that are defective or damaged. Products that are defective or damaged will include products that are broken, cracked, leaking, due to a manufacturing error causing the item to be unusable. Damage caused by improper use of the item does not apply. Please contact the store you purchased the item(s) from for further instruction. </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+ 
+    <script src="faq.js"></script>
+</body>
+</html>

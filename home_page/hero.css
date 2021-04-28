@@ -1,0 +1,139 @@
+/* New Home Header */
+
+section.hero {
+  background-color: #181818;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: scale-down; /* Resize the background image to cover the entire container */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  width: 100vw;
+}
+section.hero .heroCol {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+section.hero .heroCol .col {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.hero .heroCol #imageCol {
+  width: 42vw;
+  max-width: 42vw;
+  justify-content: left;
+  align-items: left;
+}
+section.hero .heroCol #logoCol {
+  width: 58vw;
+  max-width: 58vw;
+}
+
+section.hero svg.rotated {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 90vh;
+  stroke-width: 0.1px;
+  z-index: 2;
+}
+
+section.hero a {
+  background-color: rgba(201, 76, 76, 0);
+  border-radius: 3px;
+  line-height: 3.2vw;
+  color: #d9ab73;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.14vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 14vw;
+  max-height: 3.45vw;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 0 auto;
+  margin-top: 4vh;
+  padding: 0 20px 0 20px;
+  border: 2px solid #d9ab73;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+section.hero a:hover {
+  background-color: #d9ab73;
+  color: #232323;
+  cursor: pointer;
+}
+
+section.hero .logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 80%;
+  width: 80%;
+}
+
+section.hero .logo img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  width: 80%;
+}
+
+section.hero .heroCol .displayImage {
+  height: 84vh;
+}
+
+@media screen and (max-width: 768px) {
+  #desktopHeroView {
+    display: none;
+  }
+  #mobileHeroView {
+    display: flex !important;
+  }
+}
+
+#mobileHeroView {
+  display: none;
+}
+
+.mobileDisplayImage {
+  object-fit: cover;
+  opacity: 15%;
+  left: 12%;
+  bottom: 2%;
+  z-index: 1;
+  position: absolute;
+  max-width: none;
+}
+
+#mobileHeroView .logo {
+  z-index: 10;
+  width: 100%;
+}
+
+#mobileHeroView .logo img {
+  width: 100%;
+}
+
+#mobileHeroView .logo a {
+  max-height: 3vh;
+  padding: 20px 10px 30px 10px;
+  max-width: 70vw;
+  font-size: 1em;
+  width: 60%;
+}

@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap");
+
+$bg: #232323;
+$text: #d9ab73;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$selected: #f2e6d5;
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+.containerFaq {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Crimson Pro", serif;
+  font-weight: 300;
+  // background: $bg;
+  color: $text;
+  overflow: hidden;
+  max-height: 100vh;
+
+  .rotated {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    stroke-width: 0.1px;
+    z-index: -1;
+  }
+  .title {
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+    .faqDropDown {
+      display: none;
+      @media screen and (max-width: 800px) {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+      }
+    }
+    .dropBtn {
+      box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+      display: block;
+      width: 70%;
+      margin: auto;
+      margin-top: 3vh;
+      padding: 15px 16px 15px 16px;
+      font-size: 16px;
+      border-radius: 2px;
+      outline: none;
+      background: rgb(242, 230, 213, 0.53);
+      color: white;
+      text-transform: capitalize;
+    }
+    .dropBtn:hover,
+    .dropBtn:focus {
+      background-color: rgb(242, 230, 213, 0.33);
+    }
+    .faqDropDownContent {
+      display: none;
+      position: absolute;
+      width: 70%;
+      margin-left: 15%;
+      z-index: 1;
+    }
+    .faqDropDownContent button {
+      color: black;
+      padding: 12px 16px;
+      width: 100%;
+      background-color: rgb(60, 60, 60, 1);
+      color: white;
+      text-decoration: none;
+      margin: auto;
+      display: block;
+      border: none;
+      text-align: justify;
+    }
+    .faqDropDownContent button:hover {
+      background-color: rgb(88, 89, 91);
+    }
+    .showMobileFaq {
+      display: block !important;
+    }
+  }
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    @media screen and (max-width: 800px) {
+      padding: 0px;
+      margin-bottom: 20px;
+      display: none;
+    }
+    button {
+      @media screen and (max-width: 800px) {
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 10px;
+      }
+      position: relative;
+      display: block;
+      text-align: center;
+      width: 25%;
+      padding: 1em 0;
+      color: $text;
+      font-size: 2.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        color: $selected;
+        &::after {
+          cursor: pointer;
+          color: $selected;
+          border: 1px solid $selected;
+        }
+      }
+    }
+  }
+}
+
+.shownContent {
+  opacity: 1 !important;
+  max-height: 68vh !important;
+  overflow: auto;
+  will-change: opacity, max-height;
+}
+
+.showGrid {
+  will-change: max-height, display;
+  max-height: 100% !important;
+  display: flex !important;
+}
+.accordion {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 900ms linear;
+  will-change: opacity, max-height;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .grid {
+    display: none;
+    max-height: 0;
+    will-change: max-height, display;
+    .grid-col {
+      flex: 1;
+      width: 30%;
+      max-height: inherit;
+    }
+    .grid-col--2 {
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    width: 80%;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
+    margin-left: auto;
+    margin-right: auto;
+    button[aria-expanded="true"] {
+      border-bottom: 1px solid $selected;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $selected;
+      &::after {
+        cursor: pointer;
+        color: $selected;
+        border: 1px solid $selected;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded="true"] {
+    color: $selected;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 25em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      color: #d9ab73;
+      font-size: 1.15rem;
+      font-weight: 300;
+      margin: 2em 0;
+    }
+  }
+}
